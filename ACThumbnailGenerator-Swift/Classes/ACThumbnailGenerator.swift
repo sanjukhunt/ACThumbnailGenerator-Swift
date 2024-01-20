@@ -8,7 +8,7 @@ public protocol ACThumbnailGeneratorDelegate: class {
 
 public class ACThumbnailGenerator: NSObject {
     private(set) var preferredBitrate: Double
-    private(set) var streamUrl: URL
+    public var streamUrl: URL
     private(set) var queue: [Double] = []
     
     private var player: AVPlayer?
